@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif ;
+    background: url(assets/download.png);
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px;
+    padding: 20px;
+    padding-right: 50px;
+    border-radius: 10px;
+    height: 100%;
+}
+.profile-image{
+    border-radius: 120px;
+}
+.about-me{
+    padding: 10px;
+    margin-right: 100px;
+}
+#links{
+    padding: 10px;
+}
+#links-bar{
+    gap: 20px;
+}
+
+
+
+
