@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f5f5; /* Light background color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    color: #005f73; /* Dark teal color */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #005f73;
+    border-radius: 25px; /* Rounded input */
+    width: 250px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+}
+
+input[type="text"]:focus {
+    border-color: #0a9396; /* Lighter teal color on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(10, 147, 150, 0.5); /* Glow effect */
+}
+
+button {
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #0a9396; /* Teal background */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform effect */
+    margin-left: 10px; /* Space between input and button */
+}
+
+button:hover {
+    background-color: #94d2bd; /* Lighter teal on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+#weatherResult {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #005f73;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for results */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 400px; /* Limit the width for larger screens */
+    width: 100%; /* Responsive width */
+    text-align: center; /* Centered text */
+    transition: opacity 0.3s; /* Smooth transition for result appearance */
+}
+
+h2 {
+    margin: 0;
+    color: #005f73; /* Dark teal for headings */
+    font-size: 1.8em; /* Slightly larger heading */
+}
+
+p {
+    margin: 5px 0;
+    font-size: 1.1em; /* Slightly larger text */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    input[type="text"], button {
+        width: 100%; /* Full width on small screens */
+        margin: 5px 0; /* Stack elements */
+    }
+
+    button {
+        margin-left: 0; /* Remove left margin */
+    }
+}
