@@ -1,25 +1,25 @@
 document.getElementById('getWeather').addEventListener('click', function() {
-    const city = document.getElementById('city').value; // Get city input
-    const apiKey = 'YOUR_AP_KEY'; // Replace with your actual API key
+    const city = document.getElementById('city').value; 
+    const apiKey = 'YOUR_AP_KEY';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-    fetch(url) // Fetch the weather data
+    fetch(url) 
         .then(response => {
-            if (!response.ok) { // Check if response is okay
+            if (!response.ok) { 
                 throw new Error('City not found');
             }
-            return response.json(); // Parse response as JSON
+            return response.json(); 
         })
         .then(data => {
-            displayWeather(data); // Call function to display weather
+            displayWeather(data); 
         })
         .catch(error => {
-            document.getElementById('weatherResult').innerText = error.message; // Display error message
+            document.getElementById('weatherResult').innerText = error.message; 
         });
 });
 
 function displayWeather(data) {
-    const { main, wind, weather } = data; // Destructure weather data
+    const { main, wind, weather } = data; 
     const weatherResult = `
         <h2>Weather in ${data.name}</h2>
         <p>Temperature: ${main.temp} °C</p>
@@ -27,5 +27,5 @@ function displayWeather(data) {
         <p>Wind Speed: ${wind.speed} m/s</p>
         <p>Condition: ${weather[0].description}</p>
     `;
-    document.getElementById('weatherResult').innerHTML = weatherResult; // Display weather info
+    document.getElementById('weatherResult').innerHTML = weatherResult; 
 }
