@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", sans-serif ;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    gap: 20px;
+}
+/* header*/
+.nav-bar{
+    background-color:white;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.logo{
+    border-radius: 100px;
+}
+.nav-links{
+    list-style: none;
+    margin: 0 15px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+.nav-links a:hover{
+    background-color: black;
+    color: white;
+}
+/* main section */
+#book{
+    background-image:url(assets/Ijm.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    line-height: 90px;
+    padding-bottom: 200px;
+    letter-spacing: 4px;
+    padding-top: 10vw;
+    overflow: hidden;
+}
+#ambi{
+    padding-top: 50px;
+    font-weight: 500 ;
+}
+#suc{
+    font-size: 120px;
+}
+#p2{
+    font-size:20px ;
+    font-weight: 300 ;
+}
+#back a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+#back a:hover{
+    color:black;
+    background-color: white;    
+}
+/*last section*/
+#last{
+    display: flex;
+    justify-content: space-around;
+    background-color:lightseagreen;
+    padding-top: 2vw;
+    padding-bottom: 9vw;
+}
+#address{
+    line-height: 1.5vw;
+}
+#p5,#p6{
+    font-size: 0.9vw;
+}
+
+#p7{
+    padding: 8px;
+}
+#name,#email,#subject{
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 29vw;
+    height: 2.5vw;
+    background-color: lightseagreen ;
+}
+#message{
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 29vw;
+    background-color: lightseagreen;
+}
+#submit{
+    text-decoration: none;
+    padding: 8px 40px;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    float: right;
+}
+#submit:hover{
+    color:black;
+    background-color: white;
+}
