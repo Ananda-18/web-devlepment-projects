@@ -1,0 +1,89 @@
+body{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* HEADER */
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+#navlinks{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+#navlinks a{
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+    color:cornflowerblue;
+}
+#link:hover{
+    color: white;
+    background-color: black;
+}
+
+/* MAIN-SCETION */
+
+#main-section{
+    text-align: center;
+    background: url(35094799314_c8e4e0edf6_b.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:black;
+    padding: 150px;
+}
+#main-section h3{
+    font-size:x-large;
+}
+#main-section h1{
+    font-size:xx-large;
+}
+#main-section a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: large;
+}
+
+/* SECTION 2 */
+
+#video-section{
+    padding: 50px;
+    border: 3px solid cornflowerblue;
+    border-radius: 10px;
+}
+#video-section h1{
+    font-size: xx-large;
+    color: cornflowerblue;
+}
+#videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#video-1,#video-2{
+    width: 60vh;
+    height: 35vh; 
+}
+
+/* FOOTER */
+
+#footer-section{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#socials{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
