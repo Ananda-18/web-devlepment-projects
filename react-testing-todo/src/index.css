@@ -1,0 +1,42 @@
+*{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+.input-box{
+  background-color: white;
+  text-align: center;
+  width: 280px;
+  height: 30px;
+}
+.button{
+  color: black;
+  margin-left: 10px;
+  height: 35px;
+  background-color: aqua ;
+  transition: 0.3s;
+}
+.list-hold {
+  justify-content: space-between;
+  list-style: none; 
+  line-height: 10px;
+}
+.list-hold {
+  margin-bottom: 10px;
+}
+.list-hold li button{
+  margin-left: 40px;
+  align-items: right  ;
+}
+.list-hold li button:hover{
+  color: black;
+  background: red;
+  transform: scale(1.2);
+}
