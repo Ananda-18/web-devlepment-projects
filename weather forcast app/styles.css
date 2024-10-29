@@ -1,0 +1,122 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #83a4d4, #b6fbff);
+  color: #333;
+}
+
+#app {
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+/* Search Box */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.search-container input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  width: 65%;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-container input:focus {
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+}
+
+.search-container button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather Card */
+.weather-card {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.weather-card h2 {
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 12px;
+}
+
+.weather-card p {
+  font-size: 1.1em;
+  margin: 8px 0;
+}
+
+/* Chart Container */
+.chart-container {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.chart-container h2 {
+  font-size: 1.8em;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+}
