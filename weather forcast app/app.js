@@ -14,10 +14,21 @@ function setLocation(position) {
 
 async function getWeatherData(city = 'Delhi') {
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
-      const data = await response.json();
-      displayCurrentWeather(data);
-      getForecast(city);
+      const userCity = document.getElementById('city-input').value.trim();
+      if(userCity)
+      {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${userCity}&appid=${apiKey}&units=metric`);
+        const data = await response.json();
+        displayCurrentWeather(data);
+        getForecast(userCity);
+      }
+      else
+      {
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+        const data = await response.json();
+        displayCurrentWeather(data);
+        getForecast(city);
+      }
     } catch (error) {
       alert("Could not fetch weather data. Please try again.");
     }
@@ -44,7 +55,7 @@ function displayCurrentWeather(data) {
   document.getElementById('humidity').innerText = `Humidity: ${data.main.humidity}%`;
   document.getElementById('wind-speed').innerText = `Wind Speed: ${data.wind.speed} m/s`;
   document.getElementById('date-time').innerText = `Date/Time: ${new Date(data.dt * 1000).toLocaleString()}`;
-}
+}w
 
 async function getForecast(city) {
   const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`);
